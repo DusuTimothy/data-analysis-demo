@@ -1,0 +1,24 @@
+{
+  "name": "plateau-campaign-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Internal campaign activity analytics for the APC Plateau Senatorial District campaign, 2027.",
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "build": "npm run build --workspace client",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "npm run format --workspaces",
+    "db:setup": "npm run db:setup --workspace server",
+    "seed": "npm run seed --workspace server"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
